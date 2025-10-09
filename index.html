@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alejandro Avilés Fernández · CV</title>
+  <meta name="description" content="CV técnico de Alejandro Avilés Fernández: Ingeniería Informática (INSO + TI), proyectos web, ARSO, GCP, PHP/MySQL, y más."/>
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta property="og:title" content="CV · Alejandro Avilés Fernández" />
+  <meta property="og:description" content="Ingeniería Informática · Desarrollo web · Cloud/DevOps · Ciberseguridad" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aaf925.github.io/" />
+  <style>
+    :root{
+      --bg:#0b1220;/* fondo oscuro azulado */
+      --card:#0f172a;/* slate-900 */
+      --muted:#94a3b8;/* slate-400 */
+      --text:#e2e8f0;/* slate-200 */
+      --brand:#38bdf8;/* sky-400 */
+      --brand-2:#22d3ee;/* cyan-400 */
+      --ok:#22c55e;--warn:#f59e0b;--bad:#ef4444;
+      --ring: 0 0 0 2px var(--brand);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+      background:radial-gradient(1200px 600px at 80% -10%,rgba(56,189,248,.15),transparent),radial-gradient(1000px 800px at -10% 10%,rgba(34,211,238,.12),transparent),var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--brand)} a:hover{color:var(--brand-2)}
+    .wrap{max-width:1000px;margin:0 auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .title h1{margin:0;font-size:clamp(28px,4vw,40px)}
+    .title p{margin:.25rem 0 0;color:var(--muted)}
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{display:inline-block;padding:10px 14px;border-radius:999px;background:#0b132b;border:1px solid #1f2a44;text-decoration:none}
+    nav a:hover{box-shadow:var(--ring)}
+    .card{background:linear-gradient(180deg,rgba(148,163,184,.08),rgba(15,23,42,.6));border:1px solid rgba(148,163,184,.2);border-radius:16px;padding:20px}
+    .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+    @media (max-width:840px){.grid{grid-template-columns:1fr}}
+    h2{font-size:clamp(20px,3vw,26px);margin:0 0 10px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px}
+    .badge{padding:6px 10px;border:1px solid rgba(148,163,184,.25);border-radius:999px;background:rgba(2,6,23,.6)}
+    .list{display:grid;gap:12px}
+    .item{padding:14px;border:1px dashed rgba(148,163,184,.25);border-radius:12px}
+    .item h3{margin:0 0 4px;font-size:18px}
+    .item small{color:var(--muted)}
+    footer{margin:40px 0 0;padding:20px 0;color:var(--muted);border-top:1px dashed rgba(148,163,184,.3);text-align:center}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;border-radius:12px;text-decoration:none;border:1px solid rgba(148,163,184,.3)}
+    .btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#002233;border:none}
+    .btn.ghost{background:transparent;color:var(--text)}
+    .pill{font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid rgba(148,163,184,.3);color:var(--muted)}
+    .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    @media (max-width:840px){.cols{grid-template-columns:1fr}}
+    .sr{position:absolute;clip:rect(0 0 0 0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+    .kbd{font-family:ui-monospace,Menlo,Consolas,monospace;background:#0b132b;border:1px solid #1f2a44;border-bottom-width:3px;border-radius:6px;padding:2px 6px}
+  </style>
+  <!-- JSON-LD para SEO básico -->
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Alejandro Avilés Fernández",
+    "jobTitle":"Estudiante de Ingeniería Informática (INSO + TI)",
+    "url":"https://aaf925.github.io",
+    "sameAs":["https://github.com/aaf925"],
+    "knowsAbout":["Desarrollo web","PHP","HTML","CSS","MySQL","Java","Python","JavaScript","GCP","Linux","Ciberseguridad"]
+  }</script>
+</head>
+<body>
+  <div class="wrap">
+    <a class="sr" href="#contenido">Saltar al contenido</a>
+    <header>
+      <div class="title">
+        <h1>Alejandro Avilés Fernández</h1>
+        <p>Ingeniería Informática · Desarrollo web · Cloud/DevOps · Ciberseguridad</p>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#" download title="Descargar CV en PDF (añádelo cuando lo tengas)">Descargar CV (PDF)</a>
+        <a class="btn ghost" href="mailto:alejandro@example.com" title="Escríbeme por email">alejandro@example.com</a>
+        <a class="btn ghost" href="https://github.com/aaf925" rel="me" target="_blank">github.com/aaf925</a>
+      </div>
+    </header>
+
+    <nav aria-label="Secciones">
+      <a href="#resumen">Resumen</a>
+      <a href="#skills">Tecnologías</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#formacion">Formación</a>
+      <a href="#certs">Certificaciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main id="contenido" class="grid" style="margin-top:20px">
+      <!-- Columna principal -->
+      <section class="card" id="resumen">
+        <h2>Resumen</h2>
+        <p>Estudiante de <strong>Ingeniería Informática</strong> en la <strong>Universidad de Almería</strong> (doble itinerario: <em>Ingeniería del Software</em> y <em>Tecnologías de la Información</em>). Apasionado por la <strong>automatización</strong>, la <strong>ciberseguridad</strong> y el desarrollo web. Me gusta aplicar lo aprendido en proyectos reales y mejorar cada día con buenas prácticas, tests y documentación.</p>
+        <div class="badges" style="margin-top:10px">
+          <span class="badge">PHP · HTML · CSS · MySQL</span>
+          <span class="badge">Java · JUnit 5</span>
+          <span class="badge">Python</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Linux · GCP · Redes</span>
+          <span class="badge">Git · GitHub Actions</span>
+        </div>
+      </section>
+
+      <!-- Columna lateral -->
+      <aside class="card" aria-label="Datos rápidos">
+        <h2>Datos rápidos</h2>
+        <div class="list">
+          <div class="item"><strong>Ubicación:</strong> Almería, España</div>
+          <div class="item"><strong>Teléfono:</strong> <span class="kbd">635&nbsp;042&nbsp;501</span></div>
+          <div class="item"><strong>Disponibilidad:</strong> Prácticas / Junior</div>
+          <div class="item"><strong>Idiomas:</strong> Español (nativo), Inglés (B2 Aptis)</div>
+        </div>
+      </aside>
+
+      <section class="card" id="skills">
+        <h2>Tecnologías destacadas</h2>
+        <div class="cols">
+          <div class="item">
+            <h3>Backend &amp; Bases de datos</h3>
+            <p>PHP (PHPMailer, APIs REST), MySQL, patrones CRUD, seguridad básica (hashing, validación, verificación email).</p>
+          </div>
+          <div class="item">
+            <h3>Frontend</h3>
+            <p>HTML semántico, CSS responsive, diseño coherente, formularios accesibles, TinyMCE.</p>
+          </div>
+          <div class="item">
+            <h3>DevOps &amp; Sistemas</h3>
+            <p>Linux (Ubuntu/Debian), redes (VPN, WireGuard), GCP (Compute, VPC), automatización básica con <code>bash</code>.</p>
+          </div>
+          <div class="item">
+            <h3>Java &amp; Testing</h3>
+            <p>Java 21, Maven, JUnit 5, pruebas parametrizadas con CSV, cobertura &gt;=95%.</p>
+          </div>
+          <div class="item">
+            <h3>Herramientas</h3>
+            <p>Git, GitHub Actions, VS Code, WireGuard/OpenVPN, mdadm/LVM, Flatpickr.</p>
+          </div>
+          <div class="item">
+            <h3>Otros</h3>
+            <p>SEO on‑page básico, Google Analytics/Adsense (nociones), scraping/API (Kiwi Tequila).</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="proyectos">
+        <h2>Proyectos relevantes</h2>
+        <div class="list">
+          <div class="item">
+            <h3>Clínica Rayo (sitio web + panel admin)</h3>
+            <small>PHP · MySQL · URLs amigables · TinyMCE · Blog con categorías · Citas y verificación por email</small>
+            <p>Desarrollo full‑stack con formularios de registro/login, verificación de correo (PHPMailer + SMTP IONOS), gestión de citas (estados: disponible/pendiente/confirmada/completada), panel administrativo, y blog con categorías y buscador.</p>
+            <p class="pill">Repositorio/DEMO: <a href="#">(enlace aquí)</a></p>
+          </div>
+          <div class="item">
+            <h3>ARSO – Prácticas de sistemas en GCP</h3>
+            <small>GCP · VPC · VM Linux · RAID/LVM · cuotas · WireGuard · automatización</small>
+            <p>Infraestructura de laboratorio: redes VPC, VMs Ubuntu/Debian, RAID‑5/10 con <code>mdadm</code>, cuotas en ext4, VPN con WireGuard, snapshots y backups. Documentación con comandos y pantallazos.</p>
+          </div>
+          <div class="item">
+            <h3>queestudiar.com (MVP test vocacional)</h3>
+            <small>Frontend ligero · SEO · precálculo de resultados</small>
+            <p>MVP de test por etapas/niveles, una pregunta por pantalla, progreso visual, y precálculo de combinaciones para evitar latencia en tiempo real.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="formacion">
+        <h2>Formación</h2>
+        <ul class="list" style="margin:0;list-style:none;padding:0">
+          <li class="item"><strong>Grado en Ingeniería Informática</strong> – Universidad de Almería (INSO + TI) — en curso</li>
+          <li class="item">Cursos/autoformación: Cloud/DevOps, Ciberseguridad, desarrollo web moderno.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="certs">
+        <h2>Certificaciones</h2>
+        <ul class="list" style="margin:0;list-style:none;padding:0">
+          <li class="item"><strong>CCNA:</strong> Fundamentos de Conmutación, Enrutamiento y Redes Inalámbricas.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Hablamos? Puedes escribirme por email o por GitHub. También puedo compartir un PDF del CV si lo prefieres.</p>
+        <div class="badges">
+          <a class="btn" href="mailto:alejandro@example.com">alejandro@example.com</a>
+          <a class="btn" href="https://github.com/aaf925" target="_blank" rel="noreferrer">@aaf925</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>© <span id="y"></span> Alejandro Avilés Fernández · Hecho con HTML/CSS y GitHub Pages</small>
+      <div style="margin-top:8px"><small>Atajos: <span class="kbd">G</span> <span class="kbd">H</span> para ir al inicio · <span class="kbd">/</span> para enfocar la barra del navegador</small></div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Pequeños atajos de teclado
+    window.addEventListener('keydown', (e)=>{
+      if((e.key==='/')){ e.preventDefault(); /* reservado por si añades buscador */ }
+      if((e.key==='g' || e.key==='G') && (e.shiftKey===false)){ sessionStorage.setItem('gKey', Date.now()); }
+      if((e.key==='h' || e.key==='H') && (e.shiftKey===false)){
+        const g = sessionStorage.getItem('gKey');
+        if(g && Date.now()-parseInt(g,10) < 1000){ window.scrollTo({top:0,behavior:'smooth'}); }
+      }
+    });
+  </script>
+</body>
+</html>
