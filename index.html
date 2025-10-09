@@ -7,33 +7,51 @@
   <meta name="description" content="Currículum de Alejandro Avilés Fernández — Ingeniería Informática (UAL), proyectos web, redes y ciberseguridad." />
   <meta name="theme-color" content="#0ea5e9" />
   <style>
-    :root { --bg:#0b1220; --card:#0f172a; --muted:#94a3b8; --text:#e2e8f0; --brand:#38bdf8; --brand2:#22d3ee; }
-    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto; background:var(--bg); color:var(--text); line-height:1.6; }
-    a { color:var(--brand); text-decoration:none; }
-    a:hover { color:var(--brand2); }
-    .wrap { max-width:1000px; margin:auto; padding:24px; }
-    header { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; }
-    h1 { font-size:2.2rem; margin:0; }
-    h2 { margin-top:1.4rem; border-bottom:1px solid rgba(255,255,255,.1); padding-bottom:4px; }
-    .card { background:var(--card); border-radius:12px; padding:20px; margin-top:20px; border:1px solid rgba(255,255,255,.05); }
-    .list { list-style:none; padding:0; margin:0; }
-    .item { margin-bottom:10px; }
-    footer { text-align:center; color:var(--muted); font-size:14px; margin-top:30px; padding-top:10px; border-top:1px dashed rgba(255,255,255,.1); }
-    .btn { display:inline-block; padding:10px 14px; border-radius:8px; border:1px solid var(--brand); margin-right:10px; color:var(--brand); }
-    .btn:hover { background:var(--brand); color:#002233; }
+    :root{
+      --bg:#0b1220;
+      --card:#0f172a;
+      --muted:#94a3b8;
+      --text:#e2e8f0;
+      --brand:#38bdf8;
+      --brand2:#22d3ee;
+    }
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif;
+      background:radial-gradient(1200px 600px at 80% -10%,rgba(56,189,248,.15),transparent),radial-gradient(1000px 800px at -10% 10%,rgba(34,211,238,.12),transparent),var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--brand);text-decoration:none}
+    a:hover{color:var(--brand2)}
+    .wrap{max-width:1000px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px}
+    .info h1{margin:0;font-size:clamp(28px,4vw,40px)}
+    .info p{margin:.25rem 0 0;color:var(--muted)}
+    .photo img{width:170px;border-radius:10px;object-fit:cover;box-shadow:0 0 10px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.08)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;border:1px solid var(--brand);margin-right:10px;color:var(--brand)}
+    .btn:hover{background:var(--brand);color:#002233}
+    h2{margin-top:1.4rem;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:4px}
+    .card{background:linear-gradient(180deg,rgba(148,163,184,.08),rgba(15,23,42,.6));border:1px solid rgba(148,163,184,.2);border-radius:16px;padding:20px;margin-top:20px}
+    .list{list-style:none;padding:0;margin:0}
+    .item{margin-bottom:10px}
+    footer{text-align:center;color:var(--muted);font-size:14px;margin-top:30px;padding-top:10px;border-top:1px dashed rgba(255,255,255,.1)}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div>
+      <div class="info">
         <h1>Alejandro Avilés Fernández</h1>
         <p>Estudiante de Ingeniería Informática · Universidad de Almería</p>
         <p>Desarrollo Web · Redes · Ciberseguridad</p>
+        <div style="margin-top:10px">
+          <a href="cv.pdf" class="btn">Descargar CV (PDF)</a>
+          <a href="mailto:aavils200590@gmail.com" class="btn">aavils200590@gmail.com</a>
+        </div>
       </div>
-      <div>
-        <a href="cv.pdf" class="btn">Descargar CV (PDF)</a>
-        <a href="mailto:aavils200590@gmail.com" class="btn">aavils200590@gmail.com</a>
+      <div class="photo">
+        <img src="img/foto-perfil.png" alt="Foto de Alejandro Avilés Fernández" />
       </div>
     </header>
 
@@ -66,34 +84,26 @@
     </section>
 
     <section class="card">
-      <h2>Conocimientos informáticos</h2>
+      <h2>Competencias técnicas</h2>
       <ul class="list">
-        <li class="item">PHP, HTML, CSS, Java, Python, C#, MySQL, UML</li>
-        <li class="item">GCP, GitHub Pages</li>
-        <li class="item">Desarrollo web y backend con MySQL y PHP</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Competencias</h2>
-      <ul class="list">
-        <li class="item">Trabajo en equipo y compromiso ético</li>
-        <li class="item">Creatividad, iniciativa y espíritu emprendedor</li>
-        <li class="item">Capacidad de aprendizaje y aplicación práctica del conocimiento</li>
+        <li class="item"><strong>Lenguajes de programación:</strong> PHP, HTML, CSS, Java, Python, JavaScript, C#, Ensamblador, iOS y UML.</li>
+        <li class="item"><strong>Bases de datos:</strong> MySQL.</li>
+        <li class="item"><strong>Sistemas y redes:</strong> Google Cloud Platform (GCP) y Cisco (fundamentos de redes).</li>
+        <li class="item"><strong>Otros conocimientos:</strong> Configuración y administración de servicios en la nube, control de versiones con Git y GitHub.</li>
       </ul>
     </section>
 
     <section class="card">
       <h2>Certificaciones</h2>
       <ul class="list">
-        <li class="item"><strong>CCNA:</strong> Fundamentos de Conmutación, Enrutamiento y Redes Inalámbricas</li>
+        <li class="item"><strong>CCNA:</strong> Fundamentos de Conmutación, Enrutamiento y Redes Inalámbricas — Cisco Networking Academy (ATC-UAL).</li>
       </ul>
     </section>
 
     <section class="card">
       <h2>Proyectos y prácticas</h2>
       <ul class="list">
-        <li class="item"><strong>Clínica Rayo:</strong> Desarrollo web con PHP/MySQL, verificación por correo, citas y panel admin.</li>
+        <li class="item"><strong>Clínica Rayo:</strong> Desarrollo web con PHP/MySQL, verificación por correo, citas y panel administrativo.</li>
         <li class="item"><strong>ARSO:</strong> Configuración de redes, RAID, VPN y automatización en Google Cloud Platform.</li>
       </ul>
     </section>
